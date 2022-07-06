@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TinDog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+            <!-- ye to fonts k liye ho gaya-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"   
+      crossorigin="anonymous"
+    />                                                                                          <!-- ye to bootstrap k css version k liye aur just neeche wala js k liye bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />        <!-- ye to apna normal css file link krne k liye hi -->
+
+    <script src="https://kit.fontawesome.com/4db46f520f.js" crossorigin="anonymous"></script>   <!-- aur ye apple aur playstore k icons k liye fontawesome se uthaya hain , iska bhi code copy krna padta html me aur iski bhi classes hoti jo ab apan access kr pauenge-->
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                                                                    <!-- "bg-dark" class hata diya yaha se taaki pink k saath mast match kre navigation bar-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="">tindog</a>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+                                                                 <!-- ye pura navbar wala chij notion me mast se explain kr rkha hain wha se dekho-->
+              <li class="nav-item">
+                <a class="nav-link" href="">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Nav Bar -->
+
+        <!-- Title -->
+
+        <div class="row row-for-titleimage">
+          <div class="col-lg-6">
+            <h1>Meet new and interesting dogs nearby.</h1>
+            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>    <!-- ye <i> tag waale fontawesome.com se aare apple aur playstore k icons k lie-->
+            <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>  <!--download-button khud se added class hain taaki button ko thoda top se padding de paun . wasie to css me .btn ka bhi use kr skte the lekin phir wo har jagah k button k liye normalize ho jaata na jab baad me btn use krte kahi bhi tou-->
+          </div>
+          <div class="col-lg-6">
+            <img class="title-image" src="images/iphone6.png" alt="iphone-mockup" />   <!--title-image add kiya hain taaki css me modify kr k rotate kr sake-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">                            <!-- feature-box bhi custom added class hi hain taaki .col-lg-4 ka istemaal na krna pade kyunki agar ek baar use modify kr diya to baad me jabbhi col ka istemaal krna hoga waha bhi paddings, margin wagera apply ho jayenge-->
+          <i class="fa-solid fa-circle-check fa-4x icons"></i>        <!-- icons is a custom added class taaki icons ko modify kr ske css me-->
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fa-solid fa-bullseye fa-4x icons"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fa-solid fa-heart fa-4x icons"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      
+      
+
+     
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+
+      <div id="testimonial-k-liye-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <h2>
+              I no longer have to sniff other dogs for love. I've found the hottest
+              Corgi on TinDog. Woof.
+            </h2>
+            <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile" />  <!-- testimonial-image is manually added to change the doggy image into circular one,,,, pehele to ye testimonial section k andar tha just abhi abhi carousal k andar cut krna pada-->
+            <em>Pebbles, New York</em>
+          </div>
+
+          <div class="carousel-item">
+            
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+            <em>Beverly, Illinois</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-k-liye-carousel" role="button" data-slide="prev">  <!--ye aur iske neeche wala cheej to are just for buttons ,aur yhi fark hain bootstrap ki website pr pehle aur dusre carousel me-->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-k-liye-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      
+
+      
+    </section>
+
+    <!-- Press -->
+
+    <section id="press">
+      <img class="press-image" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press-image"src="images/tnw.png" alt="tnw-logo" />
+      <img class="press-image"src="images/bizinsider.png" alt="biz-insider-logo" />
+      <img class="press-image"src="images/mashable.png" alt="mashable-logo" />
+    </section>
+
+    <!-- Pricing -->
+
+<section id="pricing">
+
+  <div class="pricing-top-text">A Plan for Every Dog's Needs</div>
+      <p>Simple and affordable price plans for your and your dog.</p>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6 gridbox">
+     <div class="card">
+      <div class="card-header">
+      <h3>Chihuahua</h3>
+      </div>
+      <div class="card-body">
+      <div class="price-text">Free</div>
+      <p>5 Matches Per Day</p>
+      <p>10 Messages Per Day</p>
+      <p>Unlimited App Usage</p>
+      <div class="d-grid gap-2"><button type="button" class="btn btn-outline-dark">Sign Up</button></div>  <!-- ye line to pura buttons k liye hain apan ko full block buttons chahiye the na to bootstrap k buttons waale section me block buttons wale part se copy paste kr diya-->
+      
+      </div>
+     </div> 
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 gridbox">  
+     <div class="card">
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+      <div class="card-body">
+      <div class="price-text">$49 / mo</div>
+      <p>Unlimited Matches</p>
+      <p>Unlimited Messages</p>
+      <p>Unlimited App Usage</p>
+      <div class="d-grid gap-2"><button type="button" class="btn btn-dark">Sign Up</button></div>
+      </div>
+     </div> 
+    </div>
+
+
+
+    <div class="col-lg-4 col-md-12 gridbox-last">  
+     <div class="card">
+      <div class="card-header">
+      <h3>Mastiff</h3>
+      </div>
+      <div class="card-body">
+        <div class="price-text">$99 / mo</div>
+        <p>Pirority Listing</p>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+        <div class="d-grid gap-2"><button type="button" class="btn btn-dark">Sign Up</button></div>
+      </div>
+     </div> 
+    </div>
+  </div>
+      
+</section>
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+      <div class="cta-text">
+        <h2>Find the True Love of Your Dog's Life Today.</h2>
+      </div>
+      <button type="button" class="btn btn-dark btn-lg download-button cta-button"><i class="fa-brands fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-light btn-lg download-button cta-button"><i class="fa-brands fa-google-play"></i> Download</button>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <a class="footer-link" href="https://www.instagram.com/t.e_.n._e.t/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="footer-link" href="mailto:swastikpatel29@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a class="footer-link" href="https://www.linkedin.com/in/swastik-patel-9b1254232/"><i class="fa-brands fa-linkedin"></i></a>
+      <a class="footer-link" href="https://twitter.com/Swastik48315357"><i class="fa-brands fa-twitter"></i></a>
+      <p>Designed by Swastik</p>
+      <p>© Copyright TinDog</p>
+      
+    </footer>
+  </body>
+</html>
